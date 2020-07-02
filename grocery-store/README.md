@@ -8,9 +8,7 @@
 
 > An Online Grocery store!
 
-### 🏠 [Homepage](tobeupdated.com)
-
-### ✨ [Demo](tobeupdated.com)
+### ✨ [Live](https://sabjiwala.vercel.app/)
 
 ## Install
 
