@@ -1,4 +1,4 @@
-<h1 align="center">sabjiwala-frontend</h1>
+<h1 align="center">grocery-store</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://twitter.com/yogishhere" target="_blank">
@@ -6,9 +6,9 @@
   </a>
 </p>
 
-> An Online Grocery store!
+> An Online Grocery store! (Under Progress!)
 
-### ✨ [Live](https://sabjiwala.vercel.app/)
+### ✨ [Test](https://sabjiwala.vercel.app/)
 
 ## Install
 
