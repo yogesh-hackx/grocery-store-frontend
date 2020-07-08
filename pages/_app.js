@@ -1,6 +1,5 @@
-// import App from 'next/app'
-import '@atlaskit/css-reset'
-import '../public/styles/styles.css'
+import '@atlaskit/css-reset';
+import '../public/styles/styles.css';
 import Layout from '../Components/Layout/Layout';
 
 function MyApp({ Component, pageProps }) {
