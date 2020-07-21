@@ -49,17 +49,17 @@ export default function SellerInfo(props) {
                             type="input"
                             as={TextField}
                         />
-                        {/* <Field
+                        <Field
                             required
                             error={true}
                             helperText="Required"
-                            name="disclaimer"
+                            name="description"
                             placeholder="Description..."
                             variant="outlined"
                             rowsMin={3}
                             type="input"
                             as={TextareaAutosize}
-                        /> */}
+                        />
                         <UpdateFormState
                             form="sellerInfo"
                             handleFormChange={props.handleFormChange}
