@@ -66,7 +66,7 @@ export default function AboutProduct(props) {
                             type="input"
                             as={TextareaAutosize}
                         />
-                        {/* <Field
+                        <Field
                             required
                             error={true}
                             helperText="Required"
@@ -76,7 +76,7 @@ export default function AboutProduct(props) {
                             rowsMin={3}
                             type="input"
                             as={TextareaAutosize}
-                        /> */}
+                        />
                         <UpdateFormState
                             form="aboutProduct"
                             handleFormChange={props.handleFormChange}
