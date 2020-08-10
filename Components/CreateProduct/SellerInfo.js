@@ -43,7 +43,7 @@ export default function SellerInfo(props) {
                 {({ setFieldValue }) => (
                     <Form className={`${classes.root} ${classes.form}`}>
                         <Field
-                            name="seller"
+                            name="name"
                             label="Seller Name"
                             variant="outlined"
                             type="input"

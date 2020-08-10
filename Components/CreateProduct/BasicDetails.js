@@ -33,7 +33,7 @@ export default function BasicDetails(props) {
                         name: '',
                         MRP: '',
                         sellingPrice: '',
-                        quantity: '',
+                        quantityAvailable: '',
                         tags: [],
                     }
                 }
@@ -63,9 +63,9 @@ export default function BasicDetails(props) {
                             as={TextField}
                         />
                         <Field
-                            name="quantity"
+                            name="quantityAvailable"
                             placeholder="Quantity Available"
-                            instanceId="quantity"
+                            instanceId="quantityAvailable"
                             isClearable
                             isMulti
                             as={CreatableSelect}
@@ -76,7 +76,7 @@ export default function BasicDetails(props) {
                                 Menu: () => null,
                             }}
                             onChange={(option) => {
-                                setFieldValue('quantity', option);
+                                setFieldValue('quantityAvailable', option);
                             }}
                         />
                         <Field

@@ -12,6 +12,7 @@ import AboutProduct from '../Components/CreateProduct/AboutProduct';
 import AddImages from '../Components/CreateProduct/AddImages';
 import SellerInfo from '../Components/CreateProduct/SellerInfo';
 import { Box } from '@material-ui/core';
+import axios from 'axios';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -104,8 +105,37 @@ export default function VerticalLinearStepper() {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
 
-    const handleReset = () => {
-        setActiveStep(0);
+    const handleSubmit = async () => {
+        const payload = {
+            ...formValues.basicDetails,
+            quantityAvailable: formValues.basicDetails.quantityAvailable.map(
+                (val) => val.value,
+            ),
+            tags: formValues.basicDetails.tags.map((val) => val.label),
+            productDetails: {
+                ...formValues.aboutProduct,
+                seller: { ...formValues.sellerInfo },
+                images: {
+                    ...formValues.addImages,
+                    extraImages: Object.values(
+                        formValues.addImages.extraImages,
+                    ),
+                },
+            },
+        };
+
+        try {
+            const response = await axios.post(
+                'https://grocery-store-backend.vercel.app/api/v1/products/add',
+                payload,
+            );
+            console.log('Success!');
+        } catch (error) {
+            console.log(error);
+            // return;
+        }
+
+        console.log(payload);
     };
 
     return (
@@ -155,7 +185,7 @@ export default function VerticalLinearStepper() {
             {activeStep === steps.length && (
                 <Paper square elevation={0} className={classes.resetContainer}>
                     <Typography>Ready to create a new product!</Typography>
-                    <Button onClick={handleReset} className={classes.button}>
+                    <Button onClick={handleSubmit} className={classes.button}>
                         Submit
                     </Button>
                 </Paper>
