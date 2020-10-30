@@ -23,7 +23,7 @@ const Navbar = (props) => {
                 </div>
             </form>
             <div className={styles.basketContainer}>
-                <img src="assets/basket.svg" alt="" />
+                <img src="assets/basket.svg" alt="" className={styles.basketIcon} />
             </div>
         </div>
     );
