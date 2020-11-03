@@ -13,7 +13,7 @@ const Navbar = (props) => {
             <div className={styles.hamIconContainer}>
             <FiMenu size="26px" color="white" className={styles.hamMenu} />
             </div>
-            <form className={styles.searchBar}>
+            <div className={styles.searchBar}>
                 <input
                     type="text"
                     onFocusCapture={() => setSearchFocus(true)}
@@ -25,7 +25,7 @@ const Navbar = (props) => {
                     <input type="submit" value="Go" />
                     <BsSearch size="30px" className={styles.searchIcon} />
                 </div>
-            </form>
+            </div>
             <div className={styles.basketContainer}>
                 <img src="assets/basket.svg" alt="" className={styles.basketIcon} />
             </div>

@@ -27,6 +27,7 @@
 
     .searchBar
         width: 1300px
+        height: 42px
         min-width: 200px
         margin: 0 0
         position: relative
@@ -35,6 +36,7 @@
             // margin-right: 36px
             // margin-left: 0px
             margin: 0 32px 0 0
+            height: 32px
             // width: 290px
 
         .searchButton:hover
@@ -45,14 +47,13 @@
             display: flex
             align-items: center
             justify-content: center
-            height: 40px
+            height: 100%
             width: 88px
             background-color: #8EBF30
             border-radius: 0 4px 4px 0
             cursor: pointer
 
             @media ( max-width:  800px)
-                height: 30px
                 width: 30px
 
             .searchIcon
@@ -84,14 +85,13 @@
 
     .searchInput
         width: 100%
-        height: 40px
+        height: 100%
         border-radius: 4px 0 0 4px
         padding-left: 15px
         font-size: 16px
         outline: none
         border: none
         @media ( max-width:  800px)
-            height: 30px
 
     .searchInput:focus
         // border: 3px solid #8EBF30
