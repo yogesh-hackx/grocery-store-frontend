@@ -9,19 +9,33 @@
     position: fixed
     z-index: 999
     top: 0
+    justify-content: space-between
+
+    @media ( max-width:  800px)
+        justify-content: space-between
+
+    .hamIconContainer
+        display: none
 
     @media ( max-width:  800px)
         height: 50px
 
+        .hamIconContainer
+            display: flex
+            margin: 0 15px
+            padding: 0 0
+
     .searchBar
         width: 1300px
         min-width: 200px
-        margin: 0 auto
+        margin: 0 0
         position: relative
         display: flex
         @media ( max-width:  800px)
-            margin: auto
-            width: 250px
+            // margin-right: 36px
+            // margin-left: 0px
+            margin: 0 32px 0 0
+            // width: 290px
 
         .searchButton:hover
             background-color: #a1da37
@@ -31,7 +45,7 @@
             display: flex
             align-items: center
             justify-content: center
-            height: 42px
+            height: 40px
             width: 88px
             background-color: #8EBF30
             border-radius: 0 4px 4px 0

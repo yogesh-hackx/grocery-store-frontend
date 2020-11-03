@@ -1,5 +1,5 @@
 .itemCard
-    width: 244px
+    max-width: 244px
     height: 265px
     border-radius: 4px
     background-color: #ffffff
@@ -8,12 +8,19 @@
     flex-direction: column
     justify-content: space-around
     align-items: center
+    @media screen and ( max-width: 800px )
+        width: auto
+        height: 220px
+        min-width: 150px
+        
 
     .imgContainer
         max-width: 115px
 
         .itemImage
             width: 115px
+            @media screen and ( max-width: 800px )
+                width: 90px
 
     .priceContainer
         display: flex
@@ -26,6 +33,8 @@
         .currentPrice
             font-size: 21px
             font-weight: 600
+            @media screen and ( max-width: 800px )
+                font-size: 18px
         
         .oldPrice
             font-size: 16px
@@ -33,11 +42,15 @@
             color: #00000066
             text-decoration: line-through
             margin-left: 10px
+            @media screen and ( max-width: 800px )
+                font-size: 16px
 
     .itemTitle
         font-weight: 600
         max-width: 170px
         text-align: center
+        @media screen and ( max-width: 800px )
+            max-width: 160px        
 
     .addButtonContainer
         width: 206px
@@ -53,6 +66,9 @@
         -moz-user-select: none
         -webkit-user-select: none
         cursor: pointer
+        @media screen and ( max-width: 800px )
+            width: 160px
+            height: 32px
 
     .addButtonContainer:hover
         background-color: #a8e23c

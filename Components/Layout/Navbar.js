@@ -1,6 +1,7 @@
-import { BsSearch } from 'react-icons/bs';
-import styles from './Navbar.module.sass';
 import { useState } from 'react';
+import { BsSearch } from 'react-icons/bs';
+import { FiMenu } from 'react-icons/fi';
+import styles from './Navbar.module.sass';
 
 const Navbar = (props) => {
     const [searchFocus, setSearchFocus] = useState(false);
@@ -9,6 +10,9 @@ const Navbar = (props) => {
     return (
         <div className={styles.navbar}>
             <div className={styles.logoContainer}>sabjiwala.in</div>
+            <div className={styles.hamIconContainer}>
+            <FiMenu size="26px" color="white" className={styles.hamMenu} />
+            </div>
             <form className={styles.searchBar}>
                 <input
                     type="text"
@@ -25,6 +29,7 @@ const Navbar = (props) => {
             <div className={styles.basketContainer}>
                 <img src="assets/basket.svg" alt="" className={styles.basketIcon} />
             </div>
+            {/* :) */}
         </div>
     );
 };

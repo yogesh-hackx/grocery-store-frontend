@@ -1,9 +1,15 @@
 .itemCardsContainer
     max-width: 1300px
-    min-width: 800px
+    // min-width: 800px
     display: grid
-    grid-template-columns: repeat(auto-fit,  244px)
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
     grid-gap: 14px
     gap: 14px
     justify-content: center
+    align-content: center
     transition: 0.3s ease
+    @media screen and ( max-width: 800px )
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+
+    @media screen and ( max-width: 500px )
+        grid-template-columns: repeat(auto-fit, minmax(165px, 1fr))

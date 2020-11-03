@@ -4,7 +4,7 @@ const ItemCard = (props) => {
     return (
         <div className={styles.itemCard}>
             <div className={styles.imgContainer}>
-                <img src="assets/tomato.png" alt="" />
+                <img src="assets/tomato.png" alt="" className={styles.itemImage} />
             </div>
             <div className={styles.priceContainer}>
                 <span className={styles.currentPrice}>

@@ -10,6 +10,16 @@ body {
 
 .container {
     max-width: 1300px;
-    min-width: 800px;
+    /* min-width: 800px; */
     margin: 85px auto;
+    padding: 0 40px;
+    align-items: center;
+    /* display: none; */
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        margin: 85px 12px;
+        padding: 0 0px;
+    }
 }
