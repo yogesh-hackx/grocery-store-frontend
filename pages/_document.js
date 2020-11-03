@@ -17,7 +17,7 @@ class MyDocument extends Document {
                     />
                     <meta
                         name="theme-color"
-                        content={theme.palette.primary.main}
+                        content="#313131"
                     />
                     <link
                         rel="stylesheet"
